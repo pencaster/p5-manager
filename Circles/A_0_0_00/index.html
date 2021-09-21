@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>CIRCLES</title>
+    <link rel="stylesheet" href="../styles/param.css">
+
+    <script language=" javascript" type="text/javascript" src="../libraries/p5.js"></script>
+
+    <script language=" javascript" type="text/javascript" src="sketch.js"></script>
+
+  </head>
+  <body>
+    <div id="drawCanvas"></div>
+    <div id="parameters">
+      <!-- GLOBAL SETTINGS -->
+      <div class="settings">
+
+        <div class="option">
+          <span id="step"></span>
+        </div>
+        <div class="option">
+          <label for="sizeSlider">Size : </label>
+          <span id="sizeSlider"></span>
+          <span id="sizeDisplay"></span>
+        </div>
+
+        <div class="option">
+          <label for="sideSizeSlider">Side size : </label>
+          <span id="sideSizeSlider"></span>
+          <span id="sideSizeDisplay"></span>
+        </div>
+
+        <div class="option">
+          <span id="checkboxComplex"></span>
+        </div>
+        <div class="option">
+          <button type="button" id="reload" onclick="regen();">Regen!</button>
+        </div>
+
+      </div>
+      <!-- COLOR SETTINGS -->
+      <div class="settings">
+
+        <div class="option-c">
+          <span style="color: red;">Red</span>
+          <span id="checkColor0"></span>
+          <div class="slider">
+            <label for="sliderColor0">Value : </label>
+            <span id="sliderColor0"></span>
+            <span id="displayColor0"></span>
+          </div>
+        </div>
+        <div class="option-c">
+          <span style="color: green;">Green</span>
+          <span id="checkColor1"></span>
+          <div class="slider">
+            <label for="sliderColor1">Value : </label>
+            <span id="sliderColor1"></span>
+            <span id="displayColor1"></span>
+          </div>
+        </div>
+        <div class="option-c">
+          <span style="color: blue;">Blue</span>
+          <span id="checkColor2"></span>
+          <div class="slider">
+            <label for="sliderColor2">Value : </label>
+            <span id="sliderColor2"></span>
+            <span id="displayColor2"></span>
+          </div>
+        </div>
+        <div class="option">
+          <button type="button" onclick="redraw();">Redraw!</button>
+        </div>
+
+      </div>
+      <!-- ANIMATION SETTINGS -->
+      <div class="settings">
+
+        <div class="option">
+          <button type="button" onclick="save();">SAVE</button>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
